@@ -4,6 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jenkins_tracker/version'
 
 Gem::Specification.new do |gem|
+  gem.add_development_dependency 'rake', '>= 0.8'
+  gem.add_development_dependency 'rspec', '~> 2.12'
+
   gem.name          = "jenkins_tracker"
   gem.version       = JenkinsTracker::VERSION
   gem.authors       = ["Prashant Nadarajan"]
