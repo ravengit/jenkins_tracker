@@ -1,5 +1,9 @@
-require "jenkins_tracker/version"
+#require 'json'
+require 'ostruct'
 
-module JenkinsTracker
-  # Your code goes here...
-end
+require 'rest-client'
+
+require 'jenkins_tracker/version'
+require 'jenkins_tracker/util'
+require 'jenkins_tracker/tracker_client'
+require 'jenkins_tracker/base'

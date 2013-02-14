@@ -1,5 +1,7 @@
 require 'jenkins_tracker'
 
+PROJECT_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '../'))
+Dir[ File.join(PROJECT_ROOT, 'spec', 'support/**/*.rb') ].each { |f| require f }
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -12,4 +14,6 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  config.include FixtureLoader
 end
