@@ -50,7 +50,7 @@ It's best to run this utility as a Post Build Action in Jenkins:
 
 The integration will result in comments being added to the relevant Pivotal Tracker stories:
 
-![Jenkins Post Build Action Screenshot](https://raw.github.com/prashantrajan/static_assets/master/jenkins_tracker/images/tracker_comment.jpg)
+![Jenkins Post Build Action Screenshot](https://raw.github.com/prashantrajan/static_assets/master/jenkins_tracker/images/tracker_comment_2.jpg)
 
 
 ## Contributing
