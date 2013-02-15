@@ -15,6 +15,21 @@ describe JenkinsTracker::Base do
       expect(obj.job_name).to eq('foo_job')
       expect(obj.build_url).to eq('http://jenkins.bitium/com/foo_job/3')
     end
+
+    context 'when changelog file does not exist' do
+      it 'raises a FileNotFoundError' do
+        changelog_file = '/a/non-existent/file/path'
+
+        expect {
+          described_class.new(
+            :changelog_file => changelog_file,
+            :tracker_token => 'xxx',
+            :job_name      => 'foo_job',
+            :build_url     => 'http://jenkins.bitium/com/foo_job/3'
+          )
+        }.to raise_error(JenkinsTracker::FileNotFoundError, "Changelog file not found at: #{changelog_file}")
+      end
+    end
   end
 
 end

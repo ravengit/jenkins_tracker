@@ -11,11 +11,11 @@ This utility makes some very specific assumptions about your Jenkins environment
 * Git as your SCM via the [Jenkins Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin).
 
 * The Jenkins build changelog file is available at `$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/changelog.xml`.
-    * The changelog contents look like this [example](https://github.com/prashantrajan/jenkins_tracker/blob/master/spec/fixtures/git_changelog.txt)
+  The changelog contents look like this [example](https://github.com/prashantrajan/jenkins_tracker/blob/master/spec/fixtures/git_changelog.txt).
 
 * Ability to execute Ruby 1.9.x scripts.
 
-* Environment variables for $JENKINS_HOME, $JOB_NAME, $BUILD_NUMBER & $BUILD_URL
+* Environment variables exists for `$JENKINS_HOME`, `$JOB_NAME`, `$BUILD_NUMBER` & `$BUILD_URL`.
 
 
 The following are required for your Pivotal Tracker project:-

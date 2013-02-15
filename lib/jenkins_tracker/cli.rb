@@ -22,8 +22,8 @@ module JenkinsTracker
         ).integrate_job_with_tracker(tracker_project_id)
 
         say "Successfully integrated Jenkins Job (#{job_name}) with Pivotal Tracker Project (#{tracker_project_id})", :green
-      rescue
-        # do nothing
+      rescue FileNotFoundError => e
+        say e.message, :red
       end
     end
 
