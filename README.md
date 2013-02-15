@@ -1,5 +1,8 @@
 # JenkinsTracker
 
+[![Build Status](https://travis-ci.org/prashantrajan/jenkins_tracker.png?branch=master)](https://travis-ci.org/prashantrajan/jenkins_tracker)
+[![Gem Version](https://badge.fury.io/rb/jenkins_tracker.png)](http://badge.fury.io/rb/jenkins_tracker)
+
 `jenkins_tracker` is a command line utility packaged as a [RubyGem](https://rubygems.org) that integrates [Jenkins](http://jenkins-ci.org/) build information with
 the relevant [Pivotal Tracker](https://www.pivotaltracker.com) stories within a project.
 
@@ -8,8 +11,9 @@ This utility makes some very specific assumptions about your Jenkins environment
 * Git as your SCM via the [Jenkins Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin).
 
 * The Jenkins build changelog file is available at `$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/changelog.xml`.
+    * The changelog contents look like this [example](https://github.com/prashantrajan/jenkins_tracker/blob/master/spec/fixtures/git_changelog.txt)
 
-* Ability to execute Ruby scripts.
+* Ability to execute Ruby 1.9.x scripts.
 
 * Environment variables for $JENKINS_HOME, $JOB_NAME, $BUILD_NUMBER & $BUILD_URL
 
