@@ -5,7 +5,7 @@ module JenkinsTracker
     attr_reader :changelog, :tracker_client, :job_name, :build_url
 
     def initialize(options = {})
-      @changelog = File.read(options[:jenkins_changelog_filename])
+      @changelog = File.read(options[:changelog_file])
       @tracker_client = TrackerClient.new(:token => options[:tracker_token])
       @job_name = options[:job_name]
       @build_url = options[:build_url]
