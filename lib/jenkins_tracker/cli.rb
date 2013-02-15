@@ -21,9 +21,10 @@ module JenkinsTracker
           :build_url     => options['build-url']
         ).integrate_job_with_tracker(tracker_project_id)
 
-        say "Successfully integrated Jenkins Job (#{job_name}) with Pivotal Tracker Project (#{tracker_project_id})", :green
+        say "Successfully integrated #{job_name} build info with Pivotal Tracker Project ##{tracker_project_id}", :green
       rescue FileNotFoundError => e
         say e.message, :red
+        abort
       end
     end
 

@@ -4,18 +4,18 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jenkins_tracker/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "jenkins_tracker"
+  gem.name          = 'jenkins_tracker'
   gem.version       = JenkinsTracker::VERSION
-  gem.authors       = ["Prashant Nadarajan"]
-  gem.email         = ["prashant.nadarajan@gmail.com"]
-  gem.description   = %q{Integrate Jenkins build info with Pivotal Tracker project stories }
-  gem.summary       = %q{Integrate Jenkins build info as notes to the relevant Pivotal Tracker stories based on post commit message syntax}
-  gem.homepage      = "https://github.com/prashantrajan/jenkins_tracker"
+  gem.authors       = ['Prashant Nadarajan']
+  gem.email         = ['prashant.nadarajan@gmail.com']
+  gem.description   = %q{Integrate Jenkins build information with a Pivotal Tracker project}
+  gem.summary       = %q{Integrate Jenkins build information as notes in the relevant Pivotal Tracker stories based on its post commit message}
+  gem.homepage      = 'https://github.com/prashantrajan/jenkins_tracker'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = %w(jenkins_tracker)
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ["lib"]
+  gem.require_paths = ['lib']
 
   gem.add_runtime_dependency 'rest-client', '~> 1.6'
   gem.add_runtime_dependency 'thor', '~> 0.15'
