@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = JenkinsTracker::VERSION
   gem.authors       = ["Prashant Nadarajan"]
   gem.email         = ["prashant.nadarajan@gmail.com"]
-  gem.description   = %q{Integrate Jenkins build details with Pivotal Tracker stories }
-  gem.summary       = %q{Send Jenkins build info as notes to the relevant Pivotal Tracker (PT) stories based on PT post commit message syntax}
+  gem.description   = %q{Integrate Jenkins build info with Pivotal Tracker project stories }
+  gem.summary       = %q{Integrate Jenkins build info as notes to the relevant Pivotal Tracker stories based on post commit message syntax}
   gem.homepage      = "https://github.com/prashantrajan/jenkins_tracker"
 
   gem.files         = `git ls-files`.split($/)
