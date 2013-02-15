@@ -1,8 +1,9 @@
 # JenkinsTracker
 
+`jenkins_tracker` is a command line utility packaged as a [RubyGem](https://rubygems.org) that integrates [Jenkins](http://jenkins-ci.org/) build information with
+the relevant [Pivotal Tracker](https://www.pivotaltracker.com) stories within a project.
 
-`jenkins_tracker` is a command line utility packaged as a RubyGem that helps integrates Jenkins build information with
-the relevant Pivotal Tracker stories within a project.
+It's ideally run as a Post Build Action in Jenkins.
 
 This utility makes some very specific assumptions about your Jenkins environment:-
 
@@ -13,7 +14,7 @@ This utility makes some very specific assumptions about your Jenkins environment
 * Ability to execute Ruby scripts.
 
 
-In addition the following are required for your Pivotal Tracker project:-
+The following are required for your Pivotal Tracker project:-
 
 * [API access enabled](https://www.pivotaltracker.com/help/api) (enabled by default).
 
