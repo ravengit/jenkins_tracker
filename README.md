@@ -21,7 +21,7 @@ This is an example of a successful build integration:
 * The build changelog file is available at `$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/changelog.xml`.
   The changelog contents look like this [example](https://github.com/prashantrajan/jenkins_tracker/blob/master/spec/fixtures/git_changelog.txt).
 
-* Ruby is available in the environment.
+* `Ruby` is available in the environment.
 
 * Environment variables exists for `$JENKINS_HOME`, `$JOB_NAME`, `$BUILD_NUMBER` & `$BUILD_URL`.
 
