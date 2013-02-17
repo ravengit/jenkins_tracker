@@ -51,13 +51,15 @@ Or install it yourself as:
 
 ### As a Post-build Action script
 
-* Requires the [Post build task plugin](http://wiki.hudson-ci.org/display/HUDSON/Post+build+task)
+Requires the [Post build task plugin](http://wiki.hudson-ci.org/display/HUDSON/Post+build+task):
 
-    # Assuming environment variables for $JENKINS_HOME, $JOB_NAME, $BUILD_NUMBER & $BUILD_URL exists
+```
+# Assuming environment variables for $JENKINS_HOME, $JOB_NAME, $BUILD_NUMBER & $BUILD_URL exists
 
-    $ bundle exec jenkins_tracker integrate --tracker-token ABC123456 --tracker-project-id 123456
-    # => Successfully integrated Jenkins Job $JOB_NAME with Pivotal Tracker Project #123456
-
+$ bundle exec jenkins_tracker integrate --tracker-token ABC123456 --tracker-project-id 123456
+# => Successfully integrated Jenkins Job $JOB_NAME with Pivotal Tracker Project #123456
+```
+    
 ![Jenkins Post Build Action Screenshot](https://raw.github.com/prashantrajan/static_assets/master/jenkins_tracker/images/jenkins_post_build_action_2.jpg)
 
 ### As a Jenkins Plugin
