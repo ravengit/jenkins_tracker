@@ -4,8 +4,8 @@
 [![Gem Version](https://badge.fury.io/rb/jenkins_tracker.png)](http://badge.fury.io/rb/jenkins_tracker)
 
 `jenkins_tracker` is a command line utility packaged as a [RubyGem](https://rubygems.org/gems/jenkins_tracker) that
-integrates [Jenkins](http://jenkins-ci.org/) build information with [Pivotal Tracker](https://www.pivotaltracker.com) stories within a project.
-The underlying API is also used in the native [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-plugin).
+integrates [Jenkins CI](http://jenkins-ci.org/) build information with [Pivotal Tracker](https://www.pivotaltracker.com) stories within a project.
+The underlying library is also used in the native [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-plugin).
 
 This is an example of a successful build integration:
 
@@ -27,6 +27,8 @@ This is an example of a successful build integration:
 
 ### Pivotal Tracker
 
+* You have created an [API Token](https://www.pivotaltracker.com/profile).
+
 * Project has [API access enabled](https://www.pivotaltracker.com/help/api) (it's enabled by default).
 
 
@@ -47,11 +49,9 @@ Or install it yourself as:
 
 ## Usage
 
-### As a Jenkins Plugin
-
-See [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-plugin)
-
 ### As a Post-build Action script
+
+* Requires the [Post build task plugin](http://wiki.hudson-ci.org/display/HUDSON/Post+build+task)
 
     # Assuming environment variables for $JENKINS_HOME, $JOB_NAME, $BUILD_NUMBER & $BUILD_URL exists
 
@@ -59,6 +59,10 @@ See [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-pl
     # => Successfully integrated Jenkins Job $JOB_NAME with Pivotal Tracker Project #123456
 
 ![Jenkins Post Build Action Screenshot](https://raw.github.com/prashantrajan/static_assets/master/jenkins_tracker/images/jenkins_post_build_action_2.jpg)
+
+### As a Jenkins Plugin
+
+* See [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-plugin)
 
 
 ## Contributing
