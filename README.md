@@ -62,10 +62,6 @@ $ bundle exec jenkins_tracker integrate --tracker-token ABC123456 --tracker-proj
     
 ![Jenkins Post Build Action Screenshot](https://raw.github.com/prashantrajan/static_assets/master/jenkins_tracker/images/jenkins_post_build_action_2.jpg)
 
-### As a Jenkins Plugin
-
-* See [Jenkins Tracker Plugin](https://github.com/prashantrajan/jenkins-tracker-plugin)
-
 
 ## Contributing
 
