@@ -28,5 +28,11 @@ module JenkinsTracker
       end
     end
 
+    desc 'version', 'Show version information'
+    def version
+      say JenkinsTracker::VERSION
+    end
+    map ['-v', '--version'] => 'version'
+
   end
 end
