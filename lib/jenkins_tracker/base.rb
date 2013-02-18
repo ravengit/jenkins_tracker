@@ -1,6 +1,6 @@
 module JenkinsTracker
   class Base
-    include Util
+    #include Util
 
     attr_reader :changelog, :tracker_client, :job_name, :build_url
 
@@ -17,10 +17,29 @@ module JenkinsTracker
     end
 
     def integrate_job_with_tracker(project_id)
-      parse_changelog(changelog).each do |change|
+      parse_changelog.each do |change|
         note = "*#{change.commit_message}* integrated in *#{job_name}* (#{build_url})"
         tracker_client.add_note_to_story(project_id, change.story_id, note)
       end
+    end
+
+    def parse_changelog
+      results = []
+
+      changelog.scan(/(\[[#a-zA-Z0-9\s]+\])(.*)/) do |ids, msg|
+        parse_tracker_story_ids(ids).each do |id|
+          results << ChangelogItem.new(:story_id => id, :commit_message => "#{ids}#{msg}".strip)
+        end
+      end
+
+      results.uniq
+    end
+
+
+    private
+
+    def parse_tracker_story_ids(str)
+      str.strip.gsub(/[\[#\]]/, '').split(' ').map(&:to_i).reject { |i| i == 0 }
     end
 
   end

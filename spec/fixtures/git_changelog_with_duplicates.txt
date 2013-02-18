@@ -1,0 +1,39 @@
+Changes in branch origin/master, between c0d9a605c020d0ccaac2ef7f4a52607f0b1032ff and 05b96f9a60360525b5a17721e0ed107e53f42ede
+commit 05b96f9a60360525b5a17721e0ed107e53f42ede
+tree 90fae1497ff2e0eb19992993ac2a335561ef9e21
+parent b1d0cda2f3766e5285cbe6f8c788d5d3c2d0aaf3
+author Prashant Nadarajan <mrp@example.com> 1360758891 +0800
+committer Prashant Nadarajan <mrp@example.com> 1360758902 +0800
+
+    [#123 #456] added more test
+
+:100644 100644 7da3210b8da221718054af45ca5384a1b3c5a654 e57a7a9b044142080875d0b5b6548ea62f666143 M      README.md
+
+commit b1d0cda2f3766e5285cbe6f8c788d5d3c2d0aaf3
+tree 5364d5d2ec4e082218ef7a1d779ac35a89647f3b
+parent c0d9a605c020d0ccaac2ef7f4a52607f0b1032ff
+author Prashant Nadarajan <mrp@example.com> 1360758738 +0800
+committer Prashant Nadarajan <mrp@example.com> 1360758738 +0800
+
+    [Fixes #456 #789] added test 1 to readme
+
+:100644 100644 3979ab174391acf45520c09801a8b6919fd9df95 7da3210b8da221718054af45ca5384a1b3c5a654 M      README.md
+commit 05b96f9a60360525b5a17721e0ed107e53f42ede
+tree 90fae1497ff2e0eb19992993ac2a335561ef9e21
+parent b1d0cda2f3766e5285cbe6f8c788d5d3c2d0aaf3
+author Prashant Nadarajan <mrp@example.com> 1360758891 +0800
+committer Prashant Nadarajan <mrp@example.com> 1360758902 +0800
+
+    [#123 #456] added more test
+
+:100644 100644 7da3210b8da221718054af45ca5384a1b3c5a654 e57a7a9b044142080875d0b5b6548ea62f666143 M      README.md
+
+commit b1d0cda2f3766e5285cbe6f8c788d5d3c2d0aaf3
+tree 5364d5d2ec4e082218ef7a1d779ac35a89647f3b
+parent c0d9a605c020d0ccaac2ef7f4a52607f0b1032ff
+author Prashant Nadarajan <mrp@example.com> 1360758738 +0800
+committer Prashant Nadarajan <mrp@example.com> 1360758738 +0800
+
+    [Fixes #456 #789] added test 1 to readme
+
+:100644 100644 3979ab174391acf45520c09801a8b6919fd9df95 7da3210b8da221718054af45ca5384a1b3c5a654 M      README.md

@@ -17,7 +17,7 @@ module JenkinsTracker
         connection["projects/#{project_id}/stories/#{story_id}/notes"].post("<note><text>#{note}</text></note>")
       rescue => e
         # if the post fails for whatever reason (e.g. invalid story id etc), just ignore it
-        puts ["An error occurred while trying add note to Story ##{story_id} in Project ##{project_id} ", e.message, e.backtrace] * "\n"
+        #puts ["An error occurred while trying add note to Story ##{story_id} in Project ##{project_id} ", e.message, e.backtrace] * "\n"
       end
     end
 
