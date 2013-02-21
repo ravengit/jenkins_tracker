@@ -1,6 +1,6 @@
 # JenkinsTracker
 
-[![Build Status](https://travis-ci.org/prashantrajan/jenkins_tracker.png?branch=master)](https://travis-ci.org/prashantrajan/jenkins_tracker)
+[![Build Status](https://travis-ci.org/bitium/jenkins_tracker.png?branch=master)](https://travis-ci.org/bitium/jenkins_tracker)
 [![Gem Version](https://badge.fury.io/rb/jenkins_tracker.png)](http://badge.fury.io/rb/jenkins_tracker)
 
 `jenkins_tracker` is a command line utility packaged as a [RubyGem](https://rubygems.org/gems/jenkins_tracker) that

@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ['prashant.nadarajan@gmail.com']
   gem.description   = %q{Integrate Jenkins build information with a Pivotal Tracker project}
   gem.summary       = %q{Integrate Jenkins build information as notes in the relevant Pivotal Tracker stories based on its post commit message}
-  gem.homepage      = 'https://github.com/github/jenkins_tracker'
+  gem.homepage      = 'https://github.com/bitium/jenkins_tracker'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = %w(jenkins_tracker)
