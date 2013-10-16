@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bitium/jenkins_tracker.png?branch=master)](https://travis-ci.org/bitium/jenkins_tracker)
 [![Gem Version](https://badge.fury.io/rb/jenkins_tracker.png)](http://badge.fury.io/rb/jenkins_tracker)
+[![Code Climate](https://codeclimate.com/github/bitium/jenkins_tracker.png)](https://codeclimate.com/github/bitium/jenkins_tracker)
 
 `jenkins_tracker` is a command line utility packaged as a [RubyGem](https://rubygems.org/gems/jenkins_tracker) that
 integrates [Jenkins CI](http://jenkins-ci.org/) build information with [Pivotal Tracker](https://www.pivotaltracker.com) stories within a project.
