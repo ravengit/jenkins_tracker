@@ -12,6 +12,11 @@ This is an example of a successful build integration:
 ![Jenkins Post Build Action Screenshot](https://raw.github.com/bitium/static-assets/master/jenkins_tracker/images/tracker_comment_2.jpg)
 
 
+## Maintenance Note
+
+This library is no longer being maintained.
+
+
 ## Requirements
 
 ### Jenkins
