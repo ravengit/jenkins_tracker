@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_runtime_dependency 'rest-client', '~> 1.6'
+  gem.add_runtime_dependency 'rest-client', '>= 2.0'
   gem.add_runtime_dependency 'thor', '~> 0.15'
 
   gem.add_development_dependency 'rake', '>= 0.8'
